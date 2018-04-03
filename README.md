@@ -3,8 +3,8 @@ HTML
 H/T
 1. Create CV page
 Use HTML tags:
-<img>,<a>,<div>,<ul>,<ol>,<li>,<table>,<th>,<td>,<tr>
-<p>,<span>,<br>,<hr>,<h1>-<h6>
+```<img>,<a>,<div>,<ul>,<ol>,<li>,<table>,<th>,<td>,<tr>```
+```<p>,<span>,<br>,<hr>,<h1>-<h6>```
 
 2. Create form with input field
 username, password, confirm password, email,
