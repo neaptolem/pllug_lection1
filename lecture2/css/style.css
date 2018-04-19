@@ -1,0 +1,69 @@
+body {
+    /* background-color: #999999; */
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/img.jpg');
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    color: mediumseagreen;
+    font-family: 'Gugi', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: underline;
+}
+
+h1:hover {
+    color: maroon;
+    text-decoration: underline;
+}
+
+.container {
+    width: 100%;
+    /* background-color: peru; */
+    display: flex;
+    height: 300px;
+}
+
+.container .item {
+    width: 33%;
+    opacity: 0.8;
+}
+
+.container .item>i {
+    color: red;
+}
+
+.fa.fa-cloud {
+    font-size: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black
+}
+
+.photo {
+    background-image: url('../img/img.jpg');
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 10px blue;
+}
