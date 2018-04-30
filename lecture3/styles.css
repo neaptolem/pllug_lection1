@@ -1,0 +1,121 @@
+table {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.rel {
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background-color: limegreen;
+}
+
+.rel .rel-2 {
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.rel .abs {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: lightpink;
+}
+
+tr.maroon td {
+    background-color: maroon;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: salmon;
+}
+
+footer .item {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.position {
+    position: fixed;
+    background: firebrick;
+    color: wheat;
+    z-index: 2;
+}
+
+.position.top {
+    top: 10px;
+}
+
+.position.bottom {
+    bottom: 10px;
+}
+
+.position.right {
+    right: 10px;
+}
+
+.position.left {
+    left: 10px;
+}
+
+.text {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+}
+
+.float {
+    border: solid 1px;
+}
+
+.float::before {
+    content: '';
+    display: block;
+    background-color: seagreen;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.float::after {
+    position: relative;
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.float .left {
+    float: left;
+}
+
+.float .right {
+    float: right;
+    height: 100px;
+    background-color: steelblue;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100%;
+}
+
+.inline-block .item {
+    width: 25%;
+    background-color: silver;
+    display: inline-block;
+    font-size: 0;
+}
