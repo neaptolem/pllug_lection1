@@ -1,0 +1,27 @@
+@import 'common/variables';
+@import 'common/mixins';
+h1 {
+    color: $my-fav-color;
+}
+
+ul {
+    color: aqua;
+    li {
+        list-style: square;
+        span {
+            color: red;
+        }
+    }
+}
+
+.circle {
+    &-1 {
+        @include circle(50px, 50px, #444444);
+    }
+    &-2 {
+        @include circle(100px, 100px, #666666);
+    }
+    &-3 {
+        @include circle(150px, 150px, #888888);
+    }
+}
