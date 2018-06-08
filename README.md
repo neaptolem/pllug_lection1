@@ -143,7 +143,9 @@ console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 ```
 Lecture 7 04.06
+
 1. A vector type
+
 Write a class Vec that represents a vector in two-dimensional space. It takes x and y parameters (numbers), which it should save to properties of the same name.
 
 Give the Vec prototype two methods, plus and minus, that take another vector as a parameter and return a new vector that has the sum or difference of the two vectors’ (this and the parameter) x and y values.
@@ -160,6 +162,7 @@ console.log(new Vec(3, 4).length);
 // → 5
 ```
 2.Groups
+
 The standard JavaScript environment provides another data structure called Set. Like an instance of Map, a set holds a collection of values. Unlike Map, it does not associate other values with those—it just tracks which values are part of the set. A value can only be part of a set once—adding it again doesn’t have any effect.
 
 Write a class called Group (since Set is already taken). Like Set, it has add, delete, and has methods. Its constructor creates an empty group, add adds a value to the group (but only if it isn’t already a member), delete removes its argument from the group (if it was a member), and has returns a Boolean value indicating whether its argument is a member of the group.
@@ -183,6 +186,7 @@ console.log(group.has(10));
 // → false
 ```
 3. Iterable groups
+
 Make the Group class from the previous exercise iterable. Refer back to the section about the iterator interface earlier in the chapter if you aren’t clear on the exact form of the interface anymore.
 
 If you used an array to represent the group’s members, don’t just return the iterator created by calling the Symbol.iterator method on the array. That would work, but it defeats the purpose of this exercise.
@@ -199,6 +203,7 @@ for (let value of Group.from(["a", "b", "c"])) {
 // → c
 ```
 4. Borrowing a method
+
 Earlier in the chapter I mentioned that an object’s hasOwnProperty can be used as a more robust alternative to the in operator when you want to ignore the prototype’s properties. But what if your map needs to include the word "hasOwnProperty"? You won’t be able to call that method anymore, because the object’s own property hides the method value.
 
 Can you think of a way to call hasOwnProperty on an object that has its own property by that name?
